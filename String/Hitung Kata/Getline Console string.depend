@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702182866 source:d:\belajar c++\aplikasi lama\getline console string\main.cpp
+	<iostream>
+	<string>
+
