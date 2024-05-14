@@ -1,0 +1,4 @@
+acep	2355	Mesin
+arsay	3435	Masak
+toto	3425	teknik
+vira	3252	PGSD

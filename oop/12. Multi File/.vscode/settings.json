@@ -1,0 +1,10 @@
+{
+    "editor.codeActionsOnSave": {
+        
+
+    },
+    "files.associations": {
+        "string": "cpp",
+        "iostream": "cpp"
+    }
+}
