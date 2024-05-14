@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702338209 source:d:\belajar c++\aplikasi lama\array multidimensi\main.cpp
+	<iostream>
+	<array>
+
