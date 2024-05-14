@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1697811257 source:c:\users\fajar saputra\desktop\lembar dadu\main.cpp
+	<iostream>
+	<cstdlib>
+
+1697812174 source:d:\belajar c++\lembar dadu\main.cpp
+	<iostream>
+	<cstdlib>
+
