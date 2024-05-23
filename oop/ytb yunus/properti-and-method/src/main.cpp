@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 #include "myClass/Barang.hpp"
 #include "myClass/Penjual.hpp"
@@ -28,19 +27,19 @@ int main(int argc, char const *argv[])
     barang2.infoBarang();
 
     Penjual penjual1;
-    penjual1.nama = "otong";
-    penjual1.umur = 28;
-    penjual1.lamaKerja = 4;
-    penjual1.alamat = "padang";
+    penjual1.m_nama = "otong";
+    penjual1.m_umur = 28;
+    penjual1.m_lamaKerja = 4;
+    penjual1.m_alamat = "padang";
     penjual1.cetakInfoPenjual();
 
     Pembeli pembeli1;
-    pembeli1.nama = "ucup";
-    pembeli1.noTlp = "08383445531";
-    pembeli1.jumlahBeli = 34;
-    pembeli1.alamat = "maninjau";
-    penjual1.cetakInfoPenjual();
+    pembeli1.m_nama = "ucup";
+    pembeli1.m_noTlp = "08383445531";
+    pembeli1.m_jumlahBeli = 34;
+    pembeli1.m_alamat = "maninjau";
+    pembeli1.infoPembeli();
 
-    cout << endl;
+    std::cout << std::endl;
     return 0;
 }

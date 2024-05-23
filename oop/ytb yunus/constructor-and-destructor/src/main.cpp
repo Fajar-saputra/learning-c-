@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+
 
 #include "myClass/Barang.hpp"
 #include "myClass/Penjual.hpp"
@@ -20,8 +20,8 @@ int main(int argc, char const *argv[])
     penjual1.cetakInfoPenjual();
 
     Pembeli pembeli1("ucup",452, "08383445531", "maninjau");
-    pembeli1.cetakInfoPenjual();
+    pembeli1.infoPembeli();
 
-    cout << endl;
+    std::cout << std::endl;
     return 0;
 }

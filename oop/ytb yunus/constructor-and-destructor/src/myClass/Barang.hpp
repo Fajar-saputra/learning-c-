@@ -1,58 +1,40 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
-class Barang{
-    public:
+class Barang {
+public:
     // property / attribute
-        string m_nama;
-        int m_stokBarang;
-        int m_hargaBarang;
+    std::string m_nama;
+    int m_stokBarang;
+    int m_hargaBarang;
 
-    
-    public:
     // constructor
-    Barang(const char* m_nama = "no name",int m_stokBarang = 0,int m_hargaBarang = 0)
-    {
-        Barang::m_nama = m_nama;
-        Barang::m_stokBarang = m_stokBarang;
-        Barang::m_hargaBarang = m_hargaBarang;
-    }
+    Barang(std::string nama = "no name", int stokBarang = 0, int hargaBarang = 0)
+    : m_nama(nama), m_stokBarang(stokBarang), m_hargaBarang(hargaBarang) {}
 
     // Destructor
-    // ~Barang()
-    // {
-    //     cout << "sudah selesai menggunakan objek!" << endl;
-    // }
+    ~Barang() {
+        std::cout << "sudah selesai menggunakan objek!" << std::endl;
+    }
 
     // method / behavior
-    void tambahBarang(int jmlBarang)
-    {
-        m_stokBarang = m_stokBarang + jmlBarang;
-        cout << "Stok berhasil ditambahkan jumlah : " << m_stokBarang << endl;
+    void tambahBarang(int jmlBarang) {
+        m_stokBarang += jmlBarang;
+        std::cout << "Stok berhasil ditambahkan jumlah : " << m_stokBarang << std::endl;
     }
 
-    void kurangiBarang(int barang)
-    {
-        m_stokBarang = m_stokBarang - barang;
-        cout << "Stok berhasil dikurangi jumlah : " << m_stokBarang << endl;
+    void kurangiBarang(int barang) {
+        m_stokBarang -= barang;
+        std::cout << "Stok berhasil dikurangi jumlah : " << m_stokBarang << std::endl;
     }
 
-    void cekBarang(){
-        if (m_stokBarang > 0)
-        {
-            cout << "barang ada" << endl;
-        } else{
-            cout << "barang kosong\n";
-        }
-        
+    void cekBarang() {
+        std::cout << (m_stokBarang > 0 ? "barang ada" : "barang kosong") << std::endl;
     }
 
-
-    void infoBarang()
-    {
-        cout << "Nama Barang : " << m_nama << endl;
-        cout << "Stok Barang : " << m_stokBarang << endl;
-        cout << "Harga Barang: " << m_hargaBarang << endl
-             << endl;
+    void infoBarang() {
+        std::cout << "Nama Barang : " << m_nama << std::endl
+             << "Stok Barang : " << m_stokBarang << std::endl
+             << "Harga Barang: " << m_hargaBarang << std::endl << std::endl;
     }
 };

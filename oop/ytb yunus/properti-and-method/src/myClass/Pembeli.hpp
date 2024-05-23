@@ -1,22 +1,21 @@
 #include <iostream>
-using namespace std;
 
 class Pembeli{
     public:
-        string nama;
-        int jumlahBeli;
-        string noTlp;
-        string alamat;
+        std::string m_nama;
+        int m_jumlahBeli;
+        std::string m_noTlp;
+        std::string m_alamat;
 
     public:
 
-    void cetakInfoPenjual()
+    void infoPembeli()
         {
-            cout << "Nama\t\t: " << nama << endl;
-            cout << "Umur\t\t: " << jumlahBeli << endl;
-            cout << "Lama kerja\t: " << noTlp << endl;
-            cout << "Alamat\t\t: " << alamat << endl
-                 << endl;
+            std::cout << "Nama\t\t: " << m_nama << std::endl;
+            std::cout << "Umur\t\t: " << m_jumlahBeli << std::endl;
+            std::cout << "Lama kerja\t: " << m_noTlp << std::endl;
+            std::cout << "Alamat\t\t: " << m_alamat << std::endl
+                 << std::endl;
         }
 
 };

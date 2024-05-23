@@ -1,29 +1,23 @@
 #include <iostream>
-using namespace std;
 
 class Penjual{
     public:
-        string nama;
-        int umur;
-        int lamaKerja;
-        string alamat;
+        std::string m_nama;
+        int m_umur;
+        int m_lamaKerja;
+        std::string m_alamat;
 
     public:
     // Constructor
-    Penjual(const char* nama = "belum ada", int umur = 0, int lamaKerja = 0, string alamat = "tidak ada")
-    {
-        Penjual::nama = nama;
-        Penjual::umur = umur;
-        Penjual::lamaKerja = lamaKerja;
-        Penjual::alamat = alamat;
-    }
+    Penjual(std::string nama = "belum ada", int umur = 0, int lamaKerja = 0, std::string alamat = "tidak ada"): 
+    m_nama(nama), m_umur(umur), m_lamaKerja(lamaKerja), m_alamat(alamat) {}
 
     void cetakInfoPenjual()
         {
-            cout << "Nama\t\t: " << nama << endl;
-            cout << "Umur\t\t: " << umur << endl;
-            cout << "Lama kerja\t: " << lamaKerja << "tahun"<< endl;
-            cout << "Alamat\t\t: " << alamat << endl
-                 << endl;
+            std::cout << "Nama\t\t: " << m_nama << std::endl;
+            std::cout << "Umur\t\t: " << m_umur << std::endl;
+            std::cout << "Lama kerja\t: " << m_lamaKerja << " tahun" << std::endl; 
+            std::cout << "Alamat\t\t: " << m_alamat << std::endl
+                 << std::endl;
         }
 };
