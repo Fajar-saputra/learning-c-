@@ -26,6 +26,6 @@ std::string Ram::getJenisRam() {
 void Ram::cetakBarang() {
     Barang::cetakBarang();
     std::cout << "Kapasitas: " << kapasitas << std::endl;
-    std::cout << "Jenis Ram: " << jenisRam << std::endl;
+    std::cout << "Jenis Ram: " << jenisRam << std::endl<< std::endl;
 }
 

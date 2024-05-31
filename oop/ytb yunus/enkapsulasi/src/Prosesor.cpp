@@ -35,5 +35,5 @@ void Prosesor::infoBarang() {
     Barang::cetakBarang();
     std::cout << "Core I: " << getCoreI() << std::endl;
     std::cout << "Generasi: " << getGenerasi() << std::endl;
-    std::cout << "Nama Prosesor: " << getNamaProsesor() << std::endl;
+    std::cout << "Nama Prosesor: " << getNamaProsesor() << std::endl<< std::endl;
 }
