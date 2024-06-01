@@ -2,13 +2,13 @@
 using namespace std;
 int main ()
 {
-    int x;
+    int loop;
     printf("Masukan baris pola : ");
-    cin >> x;
+    cin >> loop;
 
     cout << "\nSegitiga sama kaki\n" << endl;
-    for(int i = 1; i <= x; i++){
-        for(int j = x; j > i; j--){
+    for(int i = 1; i <= loop; i++){
+        for(int j = loop; j > i; j--){
             cout << " ";
         }
         for(int k = 1; k <= (2*i-1); k++){
@@ -18,19 +18,19 @@ int main ()
     }
 
     cout << "\nSegitiga sama kaki terbalik\n" << endl;
-    for(int i = 1; i <= x; i++){
+    for(int i = 1; i <= loop; i++){
         for(int j = 1; j < i; j++){
             cout << " ";
         }
-        for(int k = x; k >= (2*i-x); k--){
+        for(int k = loop; k >= (2*i-loop); k--){
             cout << "*";
         }
         cout << endl;
     }
 
     cout << "\nlayang layang\n" << endl;
-    for(int i = 1; i <= x; i++){
-        for(int j = x; j > i; j--){
+    for(int i = 1; i <= loop; i++){
+        for(int j = loop; j > i; j--){
             cout << " ";
         }
         for(int k = 1; k <= (2*i-1); k++){
@@ -38,11 +38,11 @@ int main ()
         }
         cout << endl;
     }
-    for(int i = 2; i <= x; i++){
+    for(int i = 2; i <= loop; i++){
         for(int j = 1; j < i; j++){
             cout << " ";
         }
-        for(int k = x; k >= (2*i-x); k--){
+        for(int k = loop; k >= (2*i-loop); k--){
             cout << "*";
         }
         cout << endl;
