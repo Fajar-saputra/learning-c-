@@ -20,8 +20,8 @@ public:
 
     // setter
     void setNama(std::string m_namaBarang);
-    void setStok(std::size_t stokBarang);
-    void setHarga(std::size_t hargaBarang);
+    void setStok(int stokBarang);
+    void setHarga(int hargaBarang);
 
     // getter
     std::string getNama() const;
@@ -29,9 +29,9 @@ public:
     int getHarga() const;
 
     // Methods
-    void tambahBarang(std::size_t jmlBarang);
-    void kurangiBarang(std::size_t barang);
-    void jualBarang(std::size_t jumlah);
+    void tambahBarang(int jmlBarang);
+    void kurangiBarang(int barang);
+    void jualBarang(int jumlah);
     void cekBarang();
     void cetakBarang();
 };
