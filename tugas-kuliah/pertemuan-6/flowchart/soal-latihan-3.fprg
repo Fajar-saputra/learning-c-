@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-1bb"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 02:43:27 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjA4OjA2IFBNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjQzOjI3IFBNOzY7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaiTinggi, i, nilaiSiswa" type="Integer" array="False" size=""/>
+            <assign variable="nilaiTinggi" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Masukan Nilai Siswa : &quot;" newline="False"/>
+                <input variable="nilaiSiswa"/>
+                <if expression="nilaiTinggi &lt; nilaiSiswa">
+                    <then>
+                        <assign variable="nilaiTinggi" expression="nilaiSiswa"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Nilai siswa tertinggi : &quot;" newline="False"/>
+            <output expression="nilaiTinggi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

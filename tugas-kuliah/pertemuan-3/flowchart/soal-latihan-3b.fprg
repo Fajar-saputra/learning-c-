@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="latihan-3-b"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-23 07:29:35 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA3OjE2OjIzIFBNOzI4MDI="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA3OjI5OjM1IFBNOzE7MjkxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Real" array="False" size=""/>
+            <assign variable="A" expression="25"/>
+            <assign variable="B" expression="A / 2"/>
+            <assign variable="C" expression="A - B * 2"/>
+            <output expression="C" newline="True"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="A / 2"/>
+            <assign variable="C" expression="A - B * 2"/>
+            <output expression="C" newline="True"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="A / 2"/>
+            <assign variable="C" expression="A - B * 2"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

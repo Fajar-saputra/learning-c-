@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-3"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 11:05:27 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzEwOjQxOjI4IEFNOzI3ODg="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzExOjA1OjI3IEFNOzE7Mjg5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lamaKerja, jamMasuk, jamKeluar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Jam Masuk: &quot;" newline="False"/>
+            <input variable="jamMasuk"/>
+            <output expression="&quot;Jam Keluar: &quot;" newline="False"/>
+            <input variable="jamKeluar"/>
+            <if expression="jamKeluar &gt;= jamMasuk">
+                <then>
+                    <assign variable="lamaKerja" expression="jamKeluar - jamMasuk"/>
+                    <output expression="lamaKerja" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="lamaKerja" expression="(12 - jamMasuk) + jamKeluar"/>
+                    <output expression="lamaKerja" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

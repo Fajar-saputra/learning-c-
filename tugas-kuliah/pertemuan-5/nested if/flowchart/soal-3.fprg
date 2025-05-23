@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-3"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 08:35:30 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA4OjE3OjE0IEFNOzI3OTM="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA4OjM1OjMwIEFNOzE7Mjg5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kodePulau" type="String" array="False" size=""/>
+            <declare name="kodeKota" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan kode pulau : &quot;" newline="False"/>
+            <input variable="kodePulau"/>
+            <if expression="kodePulau == &quot;j&quot; || kodePulau == &quot;J&quot;">
+                <then>
+                    <output expression="&quot;Masukan kode kota : &quot;" newline="False"/>
+                    <input variable="kodeKota"/>
+                    <if expression="kodeKota == 1">
+                        <then>
+                            <output expression="&quot;Jakarta&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="kodeKota ==2">
+                                <then>
+                                    <output expression="&quot;Surabaya&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="kodeKota ==3">
+                                        <then>
+                                            <output expression="&quot;Bandung&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="kodeKota ==4">
+                                                <then>
+                                                    <output expression="&quot;Semarang&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="kodeKota ==5">
+                                                        <then>
+                                                            <output expression="&quot;Yogyakarta&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Salah Memasukan kode kota&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="kodePulau == &quot;s&quot; || kodePulau == &quot;S&quot;">
+                        <then>
+                            <output expression="&quot;Masukan kode kota : &quot;" newline="True"/>
+                            <input variable="kodeKota"/>
+                            <if expression="kodeKota ==1">
+                                <then>
+                                    <output expression="&quot;Medan&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="kodeKota ==2">
+                                        <then>
+                                            <output expression="&quot;Palembang&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="kodeKota ==3">
+                                                <then>
+                                                    <output expression="&quot;Padang&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Salah memasukan kode kota&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="kodePulau == &quot;k&quot; || kodePulau == &quot;K&quot;">
+                                <then>
+                                    <output expression="&quot;Masukan kode kota : &quot;" newline="True"/>
+                                    <input variable="kodeKota"/>
+                                    <if expression="kodeKota == 1">
+                                        <then>
+                                            <output expression="&quot;Banjarmasin&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="kodeKota ==2">
+                                                <then>
+                                                    <output expression="&quot;Pontianak&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Salah memasukan kode kota&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Salah memasukan kode pulau&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="latihan-3-a"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-23 07:16:17 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA3OjEyOjM4IFBNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA3OjE2OjE3IFBNOzE7MjkxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Real" array="False" size=""/>
+            <assign variable="A" expression="7"/>
+            <assign variable="B" expression="A / 2"/>
+            <assign variable="C" expression="A % 2"/>
+            <output expression="B" newline="True"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

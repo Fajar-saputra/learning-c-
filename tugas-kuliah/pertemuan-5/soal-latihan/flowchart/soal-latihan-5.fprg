@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-5"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 11:33:00 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzExOjE5OjI5IEFNOzI3OTU="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzExOjMzOjAwIEFNOzI7Mjg4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mataKuliah, SKS, grade" type="String" array="False" size=""/>
+            <declare name="nilai" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mata kuliah : &quot;" newline="False"/>
+            <input variable="mataKuliah"/>
+            <output expression="&quot;SKS : &quot;" newline="False"/>
+            <input variable="SKS"/>
+            <output expression="&quot;Nilai : &quot;" newline="False"/>
+            <input variable="nilai"/>
+            <if expression="nilai &gt;= 90">
+                <then>
+                    <assign variable="grade" expression="&quot;A+&quot;"/>
+                </then>
+                <else>
+                    <if expression="nilai &gt;= 80">
+                        <then>
+                            <assign variable="grade" expression="&quot;A&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="nilai &gt;= 70">
+                                <then>
+                                    <assign variable="grade" expression="&quot;B&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="nilai &gt;= 60">
+                                        <then>
+                                            <assign variable="grade" expression="&quot;C&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="nilai &gt;= 50">
+                                                <then>
+                                                    <assign variable="grade" expression="&quot;D&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="grade" expression="&quot;E&quot;"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Grade : &quot;" newline="True"/>
+            <output expression="grade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

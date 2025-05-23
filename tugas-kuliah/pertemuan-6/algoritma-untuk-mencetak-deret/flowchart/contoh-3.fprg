@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contoh-3"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 11:00:48 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzEwOjU1OjA0IEFNOzI3ODg="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzExOjAwOjQ4IEFNOzI7Mjg5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="uang, i, bulan, bunga" type="Integer" array="False" size=""/>
+            <assign variable="uang" expression="1000000"/>
+            <assign variable="bulan" expression="10"/>
+            <for variable="i" start="1" end="bulan" direction="inc" step="1">
+                <assign variable="bunga" expression="uang * 0.02"/>
+                <assign variable="uang" expression="uang + bunga"/>
+            </for>
+            <output expression="&quot;Total uang : &quot;" newline="False"/>
+            <output expression="uang" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

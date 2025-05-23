@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contoh-1-do-while"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-23 08:47:59 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA4OjQyOjA0IFBNOzI4MDE="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA4OjQ3OjU5IFBNOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <do expression="a &lt;= 5">
+                <output expression="&quot;FTI&quot;" newline="True"/>
+                <assign variable="a" expression="a + 1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

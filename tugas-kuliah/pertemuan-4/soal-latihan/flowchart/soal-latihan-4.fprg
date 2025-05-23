@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-4"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:40:49 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjM2OjU3IFBNOzI4MTU="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjQwOjQ5IFBNOzE7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sisi1, sisi2, sisi3" type="Integer" array="False" size=""/>
+            <input variable="sisi1"/>
+            <input variable="sisi2"/>
+            <input variable="sisi3"/>
+            <if expression="sisi1 == sisi2">
+                <then>
+                    <if expression="sisi2 == sisi3">
+                        <then>
+                            <output expression="&quot;Segitiga Sama Sisi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Segitiga Sama Kaki&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Segitiga Sembarang&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

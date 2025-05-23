@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-a"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:21:59 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjE5OjM5IFBNOzI4MTY="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjIxOjU5IFBNOzE7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <if expression="N &gt; 50">
+                <then>
+                    <assign variable="N" expression="N - 25"/>
+                </then>
+                <else>
+                    <assign variable="N" expression="N + 10"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-4"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 11:19:26 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzExOjA1OjU3IEFNOzI3OTE="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzExOjE5OjI2IEFNOzE7MjkwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jenisBarang" type="String" array="False" size=""/>
+            <declare name="harga, hargaDiskon" type="Integer" array="False" size=""/>
+            <output expression="&quot;Jenis barang : &quot;" newline="False"/>
+            <input variable="jenisBarang"/>
+            <output expression="&quot;Harga Barang : &quot;" newline="False"/>
+            <input variable="harga"/>
+            <if expression="jenisBarang == &quot;a&quot; || jenisBarang == &quot;A&quot;">
+                <then>
+                    <assign variable="hargaDiskon" expression="harga - ((harga * 10) /100)"/>
+                </then>
+                <else>
+                    <if expression="jenisBarang == &quot;b&quot; || jenisBarang == &quot;B&quot;">
+                        <then>
+                            <assign variable="hargaDiskon" expression="harga - ((harga * 15) /100)"/>
+                        </then>
+                        <else>
+                            <if expression="jenisBarang == &quot;c&quot; || jenisBarang == &quot;C&quot;">
+                                <then>
+                                    <assign variable="hargaDiskon" expression="harga - ((harga * 20) /100)"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Jenis barang salah&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Jenis barang B mendapat diskon = 15%, Harga setelah didiskon = &quot;" newline="False"/>
+            <output expression="hargaDiskon" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="latihan-2"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-07 04:28:41 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTIzOzA3OjA2OjE5IFBNOzI4MDY="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA3OzA0OjI4OjQxIFBNOzI7MjkxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angkaPertama, angkaKedua, angkaKetiga" type="Integer" array="False" size=""/>
+            <input variable="angkaPertama"/>
+            <input variable="angkaKedua"/>
+            <input variable="angkaKetiga"/>
+            <if expression="angkaPertama &gt; angkaKedua &amp;&amp; angkaPertama &gt; angkaKetiga">
+                <then>
+                    <output expression="&quot;angka pertama terbesar : &quot;" newline="False"/>
+                    <output expression="angkaPertama" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angkaKedua &gt; angkaKetiga &amp;&amp; angkaKedua &gt; angkaPertama">
+                        <then>
+                            <output expression="angkaKedua" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="angkaKetiga" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-2"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 07:58:38 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA3OjU0OjIyIEFNOzI3OTI="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA3OjU4OjM4IEFNOzE7MjkxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <if expression="N = 1">
+                <then>
+                    <output expression="&quot;Kurang sekali&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="N = 2">
+                        <then>
+                            <output expression="&quot;Kurang&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="N = 3">
+                                <then>
+                                    <output expression="&quot;Cukup&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="N = 4">
+                                        <then>
+                                            <output expression="&quot;Baik&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="N = 5">
+                                                <then>
+                                                    <output expression="&quot;Baik sekali&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Data salah&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

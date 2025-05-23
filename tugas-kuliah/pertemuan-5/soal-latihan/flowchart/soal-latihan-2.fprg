@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-2"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 09:59:08 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA5OjE5OjA1IEFNOzI3OTY="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA5OjU5OjA4IEFNOzE7MjkxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaiPertama, nilaiKedua, nilaiTiga" type="Integer" array="False" size=""/>
+            <input variable="nilaiPertama"/>
+            <input variable="nilaiKedua"/>
+            <input variable="nilaiTiga"/>
+            <if expression="nilaiPertama &gt;= 60 &amp;&amp; nilaiKedua &gt;= 60 &amp;&amp; nilaitiga &gt;= 60">
+                <then>
+                    <output expression="&quot;Tiga&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="nilaiPertama &gt;= 60 &amp;&amp; nilaiKedua &gt;= 60 || nilaiKedua &gt;= 60 &amp;&amp; nilaiTiga &gt;= 60 || nilaiKedua &gt;= 60 &amp;&amp; nilaiTiga &gt;= 60">
+                        <then>
+                            <output expression="&quot;Dua&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nilaiPertama &gt;= 60 || nilaiKedua &gt;= 60 ||nilaiTiga &gt;= 60">
+                                <then>
+                                    <output expression="&quot;Dua&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Satu&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

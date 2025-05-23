@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-5"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 09:51:43 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjQwOjUxIFBNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA5OjUxOjQzIFBNOzE7MjkxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Matkul1, Matkul2, Matkul3, hitung" type="Integer" array="False" size=""/>
+            <assign variable="hitung" expression="0"/>
+            <input variable="Matkul1"/>
+            <input variable="Matkul2"/>
+            <input variable="Matkul3"/>
+            <if expression="Matkul1 &gt; 60">
+                <then>
+                    <assign variable="hitung" expression="hitung + 1"/>
+                </then>
+                <else>
+                    <assign variable="hitung" expression="hitung"/>
+                </else>
+            </if>
+            <if expression="Matkul2 &gt; 60">
+                <then>
+                    <assign variable="hitung" expression="hitung + 1"/>
+                </then>
+                <else>
+                    <assign variable="hitung" expression="hitung"/>
+                </else>
+            </if>
+            <if expression="Matkul3 &gt; 60">
+                <then>
+                    <assign variable="hitung" expression="hitung + 1"/>
+                </then>
+                <else>
+                    <assign variable="hitung" expression="hitung"/>
+                </else>
+            </if>
+            <if expression="hitung == 3">
+                <then>
+                    <output expression="&quot;3 Matkul Lulus&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="hitung == 2">
+                        <then>
+                            <output expression="&quot;2 Matkul Lulus&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="hitung == 1">
+                                <then>
+                                    <output expression="&quot;1 Matkul Lulus&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;0 Matkul Lulus&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

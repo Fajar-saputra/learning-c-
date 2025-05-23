@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-1a"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 11:51:07 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzExOjIxOjU4IEFNOzI3OTE="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzExOjUxOjA3IEFNOzE7Mjg5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <assign variable="angka" expression="1"/>
+            <while expression="angka &lt; 600">
+                <output expression="angka" newline="False"/>
+                <output expression="&quot; &quot;" newline="True"/>
+                <assign variable="angka" expression="angka * 2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

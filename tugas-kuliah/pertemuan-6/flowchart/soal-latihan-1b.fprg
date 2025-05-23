@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-1bb"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 02:22:17 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjA4OjA2IFBNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjIyOjE3IFBNOzE7MjkxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="5"/>
+            <do expression="i &lt; 35">
+                <output expression="i" newline="False"/>
+                <output expression="&quot; &quot;" newline="False"/>
+                <assign variable="i" expression="i + 3"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-1"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 09:17:16 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA4OjU1OjI1IEFNOzI3OTc="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA4OzA5OjE3OjE2IEFNOzE7MjkwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sisi1, sisi2, sisi3" type="Integer" array="False" size=""/>
+            <input variable="sisi1"/>
+            <input variable="sisi2"/>
+            <input variable="sisi3"/>
+            <if expression="sisi1 ==  sisi2 &amp;&amp; sisi1 ==  sisi3 &amp;&amp; sisi2 ==  sisi3">
+                <then>
+                    <output expression="&quot;Segitiga sama sisi&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sisi1 ==  sisi2 || sisi1 ==  sisi3 || sisi2 ==  sisi3">
+                        <then>
+                            <output expression="&quot;Segitiga Sama kaki&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Segitiga Sembarangan&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

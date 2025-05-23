@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-latihan-1bb"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-09 02:33:59 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjA4OjA2IFBNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA5OzAyOjMzOjU5IFBNOzM7MjkyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, i" type="Integer" array="False" size=""/>
+            <assign variable="angka" expression="100"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot; &quot;" newline="False"/>
+                <output expression="angka" newline="False"/>
+                <assign variable="angka" expression="angka - 5"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal-1"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-07 10:50:48 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA0LTE2OzA4OjM0OjMzIFBNOzI4MDY="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSjBWSUU3QjsyMDI1LTA1LTA3OzEwOjUwOjQ4IFBNOzI7MjkxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="5"/>
+            <assign variable="B" expression="7"/>
+            <if expression="A &lt; B">
+                <then>
+                    <output expression="&quot;Jakarta&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Bandung&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
